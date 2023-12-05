@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Search-Engine</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #background-switcher{
+            width: 100px;
+            height: 40px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0%;
+        }
+        span{
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin: 5px;
+            border: 2px solid white;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        #black{
+            background-color: black;
+        }
+        #lightslategray{
+            background-color: lightslategray;
+        }
+        #darkslateblue{
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="background-switcher">
+        <span id="black" onclick="changebg('black')"></span>
+        <span id="lightslategray" onclick="changebg('lightslategray')"></span>
+        <span id="darkslateblue" onclick="changebg('darkslateblue')"></span>
+    </div>
+  
+
+    <h1>Image Search Engine</h1>
+    <form action="" id="search-form">
+        <input type="text" name="" id="search-box" placeholder="Search an image">
+        <button>Search</button>
+    </form>
+    <div id="search-result">
+        
+    </div>
+    <button id="show-more-btn">Show More</button>
+
+    <video src="./Images/Neon Rounded Purple lines Abstract Gradient Background Animation __ Free Version.mp4" autoplay loop muted></video>
+
+    <p id="copy-right">Copyright © 2022 - 2023 TermsFeed®. All rights reserved.</p>
+
+<script src="./script.js"></script>
+</body>
+</html>
